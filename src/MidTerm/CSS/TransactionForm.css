@@ -1,0 +1,84 @@
+
+.transaction-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(to bottom right, #4864ff, #afe5ef);
+    border: 1px solid #1b07f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .transaction-form form {
+    display: grid;
+    gap: 15px;
+  }
+  
+  .transaction-form label {
+    font-size: 1rem;
+  }
+  
+  .transaction-form input[type="date"],
+  .transaction-form input[type="text"],
+  .transaction-form input[type="number"],
+  .transaction-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #2a0b9a;
+    border-radius: 3px;
+    background-color: #c3dcf9;
+    box-sizing: border-box;
+    width: 90%;
+  }
+  
+  .transaction-form select {
+    appearance: none;
+    padding-right: 30px; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23000' d='M4 5L0 1h8zM4 3L8 7H0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 8px;
+  }
+  
+  .transaction-form input[type="date"]:focus,
+  .transaction-form input[type="text"]:focus,
+  .transaction-form input[type="number"]:focus,
+  .transaction-form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .transaction-form button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #021b36;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .transaction-form button[type="submit"]:hover {
+    background: linear-gradient(to bottom right, #0e1852, #4e85ea);  
+  }
+  
+
+  @media (max-width: 768px) {
+    .transaction-form {
+      padding: 15px;
+    }
+  
+    .transaction-form h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
